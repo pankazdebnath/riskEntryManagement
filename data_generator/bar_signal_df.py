@@ -4,18 +4,7 @@ import numpy as np
 
 def generate_sample_bars_df(n_rows: int = 500, start_date: str = "2024-01-01") -> pd.DataFrame:
     """
-    Generate a sample OHLCV bars DataFrame.
-
-    Parameters:
-    -----------
-    n_rows : int
-        Number of rows (time steps) to generate.
-    start_date : str
-        Start date of the time series.
-
-    Returns:
-    --------
-    pd.DataFrame with columns: ['timestamp', 'open', 'high', 'low', 'close', 'volume']
+    Generate a sample Stock Data
     """
     rng = pd.date_range(start=start_date, periods=n_rows, freq="H")
     prices = np.cumsum(np.random.randn(n_rows)) + 100  # random walk around 100
@@ -66,5 +55,5 @@ if __name__ == "__main__":
     bars_df = generate_sample_bars_df(200)
     signals_df = generate_sample_signals_df(bars_df, signal_prob=0.1)
 
-    print(bars_df)
-    print(signals_df)
+    # print(bars_df)
+    # print(signals_df)
