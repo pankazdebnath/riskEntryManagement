@@ -21,7 +21,6 @@ def load_signals_df(bars_df):
         "entry_signal": np.random.choice([0, 1], size=len(bars_df))
     }, index=bars_df.index)
 
-
 # bars = load_bars_df()
 # signals = load_signals_df(bars)
 # print(bars.head())
