@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9df4020-21c9-43ff-aa83-52ac36a993ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/backtester/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backtester/backtester.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtest/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtest/backtester.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/feature_engineering.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/lebel_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/lebel_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_generator/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_generator/bar_signal_df.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/entry_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/entry_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/quantile_stop_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/stop_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/metrics.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +45,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.bar_signal_df.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_loader.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.bar_signal_df.executor": "Run",
+    "Python.data_loader.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
-  <component name="RunManager" selected="Python.data_loader">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\riskEntryManagement\data_generator" />
+      <recent name="E:\Projects\riskEntryManagement\features" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="bar_signal_df" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="riskEntryManagement" />
       <option name="ENV_FILES" value="" />
@@ -84,8 +105,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="riskEntryManagement" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.data_loader" />
         <item itemvalue="Python.bar_signal_df" />
       </list>

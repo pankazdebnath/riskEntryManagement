@@ -1,11 +1,21 @@
 import pandas as pd
 
 
-def generate_features(bars_df):
-    """Example technical indicators as features."""
-    df = bars_df.copy()
-    df["return_1"] = df["close"].pct_change()
-    df["ma_5"] = df["close"].rolling(5).mean()
-    df["ma_10"] = df["close"].rolling(10).mean()
-    df["volatility"] = df["return_1"].rolling(10).std()
-    return df.dropna()
+def engineer_features(bars_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Minimal features for demonstration. Keeps a RangeIndex aligned to bars_df.
+    Outputs columns:
+      - ret_1: 1-step simple return
+      - volatility: rolling std of ret_1 (window=20)
+      - sma_10, sma_50: simple moving averages
+    """
+    df = bars_df.copy().reset_index(drop=True)
+
+    close = df["close"].astype(float)
+    df["ret_1"] = close.pct_change().fillna(0.0)
+    df["volatility"] = df["ret_1"].rolling(20).std().fillna(0.0)
+    df["sma_10"] = close.rolling(10).mean().fillna(method="bfill")
+    df["sma_50"] = close.rolling(50).mean().fillna(method="bfill")
+
+    # Keep only the feature columns (index = bar number)
+    return df[["ret_1", "volatility", "sma_10", "sma_50"]]
